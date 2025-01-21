@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Map Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Memory Map Calculator</h1>
+        <div class="form-container">
+            <label for="name">Section Name:</label>
+            <input type="text" id="name" placeholder="Enter Section Name">
+            <label for="size">Size (Bytes):</label>
+            <input type="number" id="size" placeholder="Enter Size in Bytes">
+            <label for="startAddress">Starting Address (Hex):</label>
+            <input type="text" id="startAddress" placeholder="Enter Start Address in Hex (Optional)">
+            <button onclick="addArea()">Add Section</button>
+            <button onclick="clearMap()">Clear</button> <!-- New Clear Button -->
+        </div>
+
+        <div class="memory-map">
+            <h2>Memory Map:</h2>
+            <ul id="memory-map-list"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
